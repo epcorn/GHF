@@ -1,0 +1,1373 @@
+/* =======================================================================
+Template Name: Youtubers
+Author:  SmartEye Technologies
+Author URI: www.smarteyeapps.com
+Version: 1.0
+coder name:Prabin Raja
+Description: This Template is created for Youtubers
+======================================================================= */
+/* ===================================== Import Variables ================================== */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Arimo:300,400,400italic,700,700italic);
+/* ===================================== Basic CSS ==================================== */
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: #444;
+}
+
+a:hover {
+  color: #444;
+}
+
+ul {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+a:hover,
+a:focus,
+input,
+textarea {
+  text-decoration: none;
+  outline: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.cp {
+  cursor: pointer;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+p {
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+.no-padding {
+  padding: 0px;
+}
+
+.no-margin {
+  margin: 0px;
+}
+
+.hid {
+  display: none;
+}
+
+.top-mar {
+  margin-top: 15px;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+::placeholder {
+  color: #747f8a !important;
+  font-size: 13px;
+  opacity: 0.5 !important;
+}
+
+.container-fluid {
+  padding: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #545454;
+}
+
+body {
+  background-color: #f1f1f145 !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  color: #6a6a6a;
+  overflow-x: hidden;
+}
+
+.session-title {
+  padding: 0px 30px 20px;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 767px) {
+  .session-title {
+    padding: 5px;
+  }
+}
+.session-title h2 {
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+.session-title p {
+  max-width: 850px;
+  text-align: center;
+  float: none;
+  margin: auto;
+  font-size: 0.9rem;
+  margin-top: 6px;
+}
+.session-title span {
+  float: right;
+  font-style: italic;
+}
+
+.inner-title {
+  padding: 20px;
+  padding-left: 0px;
+  margin: 0px;
+  margin-bottom: 10px;
+  padding-bottom: 0px;
+  border-bottom: 1px solid #ccccccc4;
+  display: block;
+  padding-right: 0px;
+}
+.inner-title h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: left;
+  border-bottom: 1px solid #863dd9;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+  width: 300px;
+}
+.inner-title p {
+  width: 100%;
+  text-align: center;
+}
+.inner-title .btn {
+  float: right;
+  margin-top: -38px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.page-nav {
+  background-size: 100%;
+  padding: 68px;
+  text-align: center;
+  background-color: #eaeaea;
+}
+.page-nav ul {
+  float: none;
+  margin: auto;
+}
+@media screen and (max-width: 992px) {
+  .page-nav {
+    background-size: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .page-nav {
+    padding-top: 200px;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 356px) {
+  .page-nav {
+    padding-top: 200px;
+    padding-bottom: 40px;
+  }
+}
+.page-nav h2 {
+  font-size: 28px;
+  width: 100%;
+  font-weight: 700;
+  color: #444;
+}
+@media screen and (max-width: 600px) {
+  .page-nav h2 {
+    font-size: 26px;
+  }
+}
+.page-nav ul li {
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-size: 0.93rem;
+  font-weight: 600;
+  color: #444;
+}
+.page-nav ul li i {
+  width: 30px;
+  text-align: center;
+  color: #444;
+}
+.page-nav ul li a {
+  color: #444;
+  font-size: 0.93rem;
+  font-weight: 600;
+}
+
+.btn-success {
+  background-color: #51be78;
+  border-color: #51be78;
+}
+.btn-success:hover {
+  background-color: #51be78 !important;
+  border-color: #51be78 !important;
+}
+.btn-success:active {
+  background-color: #51be78 !important;
+  border-color: #51be78 !important;
+}
+.btn-success:focus {
+  background-color: #51be78 !important;
+  border-color: #51be78 !important;
+  box-shadow: none !important;
+}
+
+.btn-primary {
+  background-color: #3cc88f;
+  border-color: #3cc88f;
+}
+.btn-primary:hover {
+  background-color: #3cc88f !important;
+  border-color: #3cc88f !important;
+}
+.btn-primary:active {
+  background-color: #3cc88f !important;
+  border-color: #3cc88f !important;
+}
+.btn-primary:focus {
+  background-color: #3cc88f !important;
+  border-color: #3cc88f !important;
+  box-shadow: none !important;
+}
+
+.btn {
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+  border: 1px solid #ccc;
+}
+
+.btn-light {
+  background-color: #fff;
+  color: #3f3f3f;
+}
+
+.collapse.show {
+  display: block !important;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border: 1px solid #ccc;
+}
+
+.form-control {
+  background-color: #f8f8f8;
+  margin-bottom: 20px;
+}
+.form-control:focus {
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+.container {
+  max-width: 1170px;
+}
+@media screen and (max-width: 575px) {
+  .container {
+    padding: 10px 15px;
+  }
+}
+
+/* =================== Header Style Starts Here =================== */
+header {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+  width: 100%;
+  z-index: 99;
+}
+
+header .logo {
+  height: 70px;
+  width: 100px;
+}
+
+header .header-top {
+  background-color: #fff;
+  border-bottom: 1px solid #d3d7cea6;
+  padding: 7px 7px 3px 7px;
+}
+header .header-top .col-det .ulleft li {
+  float: left;
+  padding: 12px;
+  color: #686968;
+  font-size: 0.9rem;
+}
+.follow-li {
+  padding-top: 12px !important;
+}
+header .header-top .col-det .ulleft li i {
+  margin-right: 5px;
+  color: #bfbfbf;
+}
+header .header-top .col-det .ulleft li span {
+  margin-left: 15px;
+}
+header .header-top .col-det .ulright {
+  float: right;
+}
+.ulleft img,
+.ulright img {
+  width: 23px;
+}
+header .header-top .col-det .ulright li {
+  float: left;
+  padding: 10px;
+  color: #d3d7ce;
+  font-size: 1rem;
+  font-weight: 600;
+}
+header .header-top .col-det .ulright li i {
+  margin-right: 5px;
+  color: #8c8a8a;
+}
+header .header-top .col-det .ulright li small,
+header .header-top .col-det .ulleft li small {
+  color: #8c8a8a;
+  font-weight: 600;
+  font-size: 16px;
+}
+header .header-top .col-det .ulright li span {
+  margin-left: 15px;
+}
+header .header-top .btn-bhed {
+  padding-top: 7px;
+  text-align: center !important;
+}
+header .header-top .btn-bhed .btn {
+  padding: 5px 23px;
+  border-radius: 50px;
+  margin-left: 5px;
+}
+
+.navbar-toggler {
+  position: absolute;
+  right: 0px;
+  border: 0px;
+  padding-top: 15px;
+}
+
+header .nav-link {
+  color: #686968 !important;
+  border: 1px solid #ccc;
+  padding: 5px 15px !important;
+  border-radius: 50px;
+  margin: 5px 10px;
+  font-weight: 700;
+}
+header .nav-link:hover {
+  background-color: gold;
+  color: #fff !important;
+}
+
+.navbar {
+  padding: 4px;
+}
+
+@media (max-width: 1023px) {
+  header .container {
+    padding: 0px 15px;
+  }
+  .navbar-toggler img {
+    width: 40px !important;
+    margin-right: 25px;
+  }
+  header .logo {
+    height: 70px;
+    width: 80px;
+  }
+  .navbar {
+    padding: 0px !important;
+  }
+  .follows {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    padding: 0px;
+  }
+  .cont {
+    display: flex;
+    justify-content: space-around !important;
+  }
+  header .header-top .col-det .ulleft li {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  header .header-top .col-det .ulleft li small {
+    color: #8c8a8a;
+    font-size: 13px;
+  }
+  .ulleft img {
+    width: 20px;
+  }
+  header .nav-link {
+    color: #686968 !important;
+    border: 1px solid #ccc;
+    padding: 2px 10px !important;
+    border-radius: 50px;
+    margin: 5px 70px;
+    font-weight: 500;
+    font-size: 12px;
+  }
+  header .header-top .btn-bhed {
+    padding: 2px;
+    text-align: right;
+    display: flex !important;
+    justify-content: center !important;
+  }
+  header .header-top .btn-bhed .btn {
+    padding: 2px 15px;
+    margin-right: 15px;
+    border-radius: 50px;
+    margin-left: 1px;
+    font-size: 12px;
+  }
+  .follows {
+    display: none !important;
+  }
+  .navbar-toggler img {
+    width: 25px !important;
+    margin-right: 10px;
+  }
+  header .logo {
+    height: 55px;
+    width: 60px;
+  }
+  .navbar-toggler {
+    padding-top: 15px !important;
+  }
+}
+
+/* =================== Carousel =================== */
+
+.carousel-inner img {
+  height: 500px !important;
+}
+
+.carousel-caption {
+  bottom: 10rem;
+}
+
+.carousel-title {
+  font-size: 66px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.carousel-control-next {
+  color: #00ab9f !important;
+}
+
+@media (max-width: 1023px) {
+  .carousel-inner img {
+    height: 350px !important;
+  }
+  .carousel-caption {
+    bottom: 95px !important;
+  }
+  .carousel-title {
+    font-size: 50px;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 767px) {
+  .slider-captions {
+    display: none;
+  }
+  .carousel-inner img {
+    height: 250px !important;
+  }
+  .carousel-indicators {
+    margin-bottom: 10px !important;
+  }
+  .carousel-caption {
+    bottom: 25px !important;
+  }
+  .carousel-title {
+    font-size: 30px;
+    font-weight: 500;
+  }
+}
+
+/* ===================================== About CSS ================================== */
+.about-us {
+  background-color: #edf1f5;
+  padding: 10px 50px 50px 50px;
+}
+@media screen and (max-width: 940px) {
+  .about-us {
+    padding: 10px 10px;
+  }
+  .about-us h1 {
+    font-size: 30px;
+  }
+}
+.about-us .natur-row {
+  margin-top: 20px;
+}
+.about-us .text-part h2 {
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+.about-us .text-part p {
+  text-indent: 20px;
+  margin-bottom: 15px;
+  line-height: 27px;
+  font-weight: 500;
+  text-align: justify;
+  font-size: 0.9rem;
+}
+.about-us .image-part .about-quick-box .about-qcard {
+  padding: 50px 30px;
+  background-color: #fff;
+  box-shadow: 0 2px 3px 0 rgba(218, 218, 253, 0.35),
+    0 0px 3px 0 rgba(206, 206, 238, 0.35);
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.about-us .image-part .about-quick-box .about-qcard p {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.about-us .image-part .about-quick-box .about-qcard i {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: #3cc88f;
+}
+.about-us .image-part .about-quick-box .about-qcard .red {
+  color: #ff6b70;
+}
+.about-us .image-part .about-quick-box .about-qcard .yell {
+  color: #f7a900;
+}
+.about-us .image-part .about-quick-box .about-qcard .blu {
+  color: #21d7d9;
+}
+
+/* ===================================== Events Home CSS ================================== */
+.events {
+  background-color: #edf1f5;
+  padding: 30px;
+}
+
+.events .event-ro .event-box {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.events .event-ro .event-box img {
+  margin-bottom: 20px;
+}
+
+.events .event-ro .event-box h4 {
+  font-size: 18px;
+}
+
+.events .event-ro .event-box .raises {
+  margin-bottom: 10px;
+}
+
+.events .event-ro .event-box .raises span {
+  color: #71b61b;
+}
+
+.events .event-ro .event-box .desic {
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.proj-img {
+  width: auto;
+  height: 132px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.proj-img img {
+}
+
+@media (max-width: 767px) {
+  .events {
+    padding: 15px 10px;
+  }
+}
+
+/* ===================================== Mission Vision CSS ================================== */
+.mission-vision {
+  background-color: #fff;
+}
+.mission-vision .mission {
+  padding: 50px;
+}
+@media screen and (max-width: 940px) {
+  .mission-vision .mission {
+    padding: 30px 10px;
+  }
+}
+.mission-vision .vision {
+  padding: 50px;
+}
+@media (max-width: 940px) {
+  .mission-vision .vision {
+    padding: 0px 10px 25px;
+  }
+}
+.mission-vision .mv-det {
+  margin: auto;
+}
+
+/* ===================================== Charity Number CSS ================================== */
+.doctor-message {
+  /* background-image: url("../images/slider/slider-2.jpg"); */
+  background-attachment: fixed;
+  background-size: cover;
+}
+.doctor-message .session-title h2 {
+  color: #fff;
+}
+
+.doctor-message .inner-lay {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  color: #fff;
+}
+
+.doctor-message .inner-lay .numb {
+  text-align: center;
+  padding: 30px;
+}
+
+.doctor-message .inner-lay .numb h3 {
+  font-size: 42px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .doctor-message .inner-lay {
+    padding: 20px 10px;
+  }
+  .doctor-message .inner-lay .numb {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 0px;
+    border-bottom: 1px solid #ccc;
+  }
+  .doctor-message .inner-lay .numb h3 {
+    font-size: 25px;
+    padding-bottom: 10px;
+    padding-right: 3px;
+    margin-bottom: 5px;
+    border-bottom: 0px solid #ccc;
+    color: #fff;
+  }
+  .doctor-message .inner-lay .numb span {
+    font-size: 20px;
+    color: #21d7d9;
+  }
+}
+
+/* ===================================== Our Blog CSS ================================== */
+.our-blog {
+  background-color: #edf1f5;
+  padding: 20px 30px;
+}
+
+@media (max-width: 1023px) {
+  .our-blog {
+    padding: 20px 0px;
+  }
+}
+.our-blog .single-blog {
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px 0 rgba(218, 218, 253, 0.65),
+    0 2px 6px 0 rgba(206, 206, 238, 0.54);
+}
+
+.our-blog .single-blog figure {
+  margin-bottom: 5px;
+}
+
+.our-blog .single-blog .blog-detail {
+  padding: 0px 15px 15px;
+}
+
+.our-blog .single-blog small {
+  color: #71b61b;
+  font-size: 12px;
+}
+
+.our-blog .single-blog h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.our-blog .single-blog p {
+  text-align: justify;
+  text-indent: 20px;
+}
+
+.our-blog .single-blog .link a {
+  font-size: 12px;
+  color: #71b61b;
+}
+
+.our-blog .single-blog .link i {
+  padding-top: 6px;
+  margin-left: 5px;
+  color: #ffffff;
+}
+
+/* ===================================== Footer CSS ================================== */
+
+footer {
+  position: relative;
+  padding: 20px 0px 0px;
+  background: #212121;
+}
+
+footer .copy-right {
+  padding: 20px 0px;
+  border-top: solid 1px #dfdfdf;
+  font-size: 14px;
+  color: #84878a;
+  text-align: center;
+}
+footer .copy-right p a {
+  color: #fd580b;
+  padding-left: 10px;
+  font-weight: bold;
+}
+footer .footer-content {
+  margin: 20px 0px;
+  display: block;
+  width: 100%;
+  color: #84878a;
+}
+footer .footer-content p {
+  font-size: 16px;
+  padding: 10px 0px;
+  line-height: 27px;
+  margin: 0px;
+}
+footer .footer-content ul li {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin: 5px 10px 0px 0px;
+}
+footer .footer-content ol {
+  padding-left: 15px;
+}
+footer .footer-content ol li {
+  padding: 10px 0px 0px 0px;
+  position: relative;
+}
+footer .footer-content ol li a {
+  color: #84878a;
+  font-size: 16px;
+}
+footer .footer-content ol li a:hover {
+  color: cyan;
+  font-size: 16px;
+}
+
+footer .footer-content ol li a i {
+  padding-right: 10px;
+  color: #fd580b;
+}
+footer .footer-content h2 {
+  font-size: 20px;
+  position: relative;
+  padding: 5px 0px;
+  font-weight: 600;
+  color: #fff;
+}
+footer .footer-content .form-group {
+  position: relative;
+}
+footer .footer-content .form-group .form-control {
+  height: 40px;
+  padding-right: 40px;
+  text-overflow: ellipsis;
+}
+footer .footer-content .form-group i {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  color: #fff;
+  background: #fd580b;
+  text-align: center;
+  top: 0;
+  right: 0;
+}
+.dot {
+  height: 8px;
+  width: 8px;
+  margin-right: 10px;
+  background-color: cyan;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+@media screen and (max-width: 767.98px) {
+  .bg-0-b .main-card-contact .sup-card-contact {
+    width: 100%;
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+  .footer-content ul,
+  .footer-content h2 {
+    text-align: center !important;
+  }
+}
+
+/* ===================================== Our Team ================================== */
+
+.bg-04 {
+  padding: 30px 0;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+}
+.about-us-page {
+  background-color: #edf1f5;
+}
+.bg-04 .main-team-card {
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  position: relative;
+  transition: 0.5s;
+}
+.bg-04 .main-team-card .team-setup {
+  margin: 0px;
+  padding: 10px;
+  flex: 1 1 25%;
+  width: 25%;
+  max-width: 25%;
+}
+.bg-04 .main-team-card .team-setup .team-items .team-user-social ol li {
+  display: inline-block;
+  padding-right: 10px;
+  color: #fff;
+  transition: 0.6s;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  text-align: center;
+  padding: 0px;
+  border-radius: 50px;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.bg-04 .main-team-card .team-setup .team-items .team-user-social {
+  position: absolute;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  padding: 5px 0px;
+  top: 60%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: -100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .bg-04 .main-team-card .team-setup .team-items .team-user-social ol li {
+    display: inline-block;
+    color: #fff;
+    transition: 0.6s;
+    height: 25px;
+    width: 25px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 16px;
+    margin-right: 17px;
+  }
+  .bg-04 .main-team-card .team-setup .team-items .team-user-social {
+    position: absolute;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    padding: 3px;
+    top: 50% !important;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: -100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .bg-04 {
+    padding: 20px 0;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  .bg-04 .main-team-card {
+    margin-bottom: 0px;
+  }
+  .bg-04 .main-team-card .team-setup {
+    width: 50%;
+    max-width: 50%;
+    flex: 1 1 50%;
+    -webkit-flex-direction: 1 1 50%;
+    -moz-flex-direction: 1 1 50%;
+    -ms-flex-direction: 1 1 50%;
+  }
+  .bg-04 .main-team-card .team-setup .team-items .team-user-social ol li {
+    display: inline-block;
+    padding-right: 10px;
+    color: #fff;
+    transition: 0.6s;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    text-align: center;
+    padding: 0px;
+    border-radius: 50px;
+    font-size: 16px;
+    margin-right: 15px;
+  }
+  .bg-04 .main-team-card .team-setup .team-items .team-user-social {
+    position: absolute;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    padding: 1px 0px;
+    top: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: -100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    display: none;
+  }
+}
+
+.bg-04 .main-team-card .team-setup .team-items {
+  width: 100%;
+  display: block;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.07);
+  transition: 0.5s;
+  position: relative;
+}
+.bg-04 .main-team-card .team-setup .team-items:hover .team-user-social {
+  opacity: 1;
+  visibility: visible;
+  left: 0;
+  display: block;
+}
+.bg-04 .main-team-card .team-setup .team-items:hover .team-user::before {
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+  display: block;
+}
+.bg-04 .main-team-card .team-setup .team-items .team-name {
+  padding: 5px 0px;
+  position: relative;
+  display: block;
+  text-align: center;
+  z-index: 2;
+}
+.bg-04 .main-team-card .team-setup .team-items .team-name::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  top: -10px;
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  left: 47%;
+  z-index: 1;
+}
+.bg-04 .main-team-card .team-setup .team-items .team-name h2 {
+  font-size: 18px;
+}
+.bg-04 .main-team-card .team-setup .team-items .team-name b {
+  font-size: 15px;
+  color: #848484;
+}
+.bg-04 .main-team-card .team-setup .team-items .team-user {
+  overflow: hidden;
+  position: relative;
+  transition: 0.5s;
+}
+.bg-04 .main-team-card .team-setup .team-items .team-user::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .bg-04 .main-team-card .team-setup .team-items .team-user-social {
+    top: 40%;
+  }
+}
+
+.bg-04 .main-team-card .team-setup .team-items .team-user-social ol li:hover {
+  color: #fd580b;
+  transform: translateX(-5px);
+}
+
+/* ===================================== Gallery Style  ================================== */
+.gallery-filter {
+  width: 100%;
+  text-align: center;
+}
+
+.gallery-filter .btn {
+  background-color: #fff;
+}
+
+.gallery {
+  padding: 50px;
+  padding: 30px;
+  background-color: #edf1f5;
+}
+@media screen and (max-width: 1023px) {
+  .gallery {
+    padding: 30px 10px;
+  }
+}
+
+.gallery-title {
+  font-size: 36px;
+  color: #00ab9f;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.gallery-title:after {
+  content: "";
+  position: absolute;
+  width: 7.5%;
+  left: 46.5%;
+  height: 45px;
+  border-bottom: 1px solid #3cc88f;
+}
+
+.filter-button {
+  font-size: 15px;
+  border: 1px solid #3cc88f;
+  border-radius: 5px;
+  text-align: center;
+  color: #3cc88f;
+  margin-bottom: 30px;
+  margin-right: 10px;
+}
+
+.filter-button:hover {
+  font-size: 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #3cc88f;
+}
+
+/* .btn-default:active .filter-button:active {
+  background-color: #3cc88f;
+  color: white;
+} */
+
+.port-image {
+  width: 100%;
+}
+
+.gallery_product {
+  margin-bottom: 30px;
+}
+
+/* ===================================== Single Blog Details  ================================== */
+
+.blog-p {
+  text-indent: 20px !important;
+  margin-bottom: 15px !important;
+  line-height: 27px !important;
+  font-weight: 500 !important;
+  text-align: justify !important;
+  font-size: 0.9rem !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .embed-youtube {
+    position: relative;
+    padding-bottom: 50%; /* - 16:9 aspect ratio (most common) */
+    /* padding-bottom: 62.5%; - 16:10 aspect ratio */
+    /* padding-bottom: 75%; - 4:3 aspect ratio */
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .embed-youtube iframe,
+  .embed-youtube object,
+  .embed-youtube embed {
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .embed-youtube {
+    position: relative;
+    padding-bottom: 56%; /* - 16:9 aspect ratio (most common) */
+    /* padding-bottom: 62.5%; - 16:10 aspect ratio */
+    /* padding-bottom: 75%; - 4:3 aspect ratio */
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .embed-youtube iframe,
+  .embed-youtube object,
+  .embed-youtube embed {
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* ===================================== TImeline  ================================== */
+
+/* The actual timeline (the vertical ruler) */
+
+.timeline {
+  background-color: #edf1f5;
+}
+
+.main-timeline-2 {
+  position: relative;
+}
+
+/* The actual timeline (the vertical ruler) */
+.main-timeline-2::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  background-color: #26c6da;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.timeline-2 {
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.timeline-2::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -11px;
+  background-color: #26c6da;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left-2 {
+  padding: 0px 40px 20px 0px;
+  left: 0;
+}
+
+/* Place the container to the right */
+.right-2 {
+  padding: 0px 0px 20px 40px;
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left-2::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  right: 30px;
+  border: medium solid rgba(37, 117, 252, 1);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent rgba(37, 117, 252, 1);
+}
+
+/* Add arrows to the right container (pointing left) */
+.right-2::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  left: 30px;
+  border: medium solid rgba(245, 87, 108, 1);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent rgba(245, 87, 108, 1) transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right-2::after {
+  left: -14px;
+}
+
+.gradient-custom {
+  background: linear-gradient(
+    to right,
+    rgba(106, 17, 203, 1),
+    rgba(37, 117, 252, 1)
+  );
+}
+
+.gradient-custom1 {
+  background: linear-gradient(
+    to left,
+    rgba(240, 147, 251, 1),
+    rgba(245, 87, 108, 1)
+  );
+}
+
+.gradient-custom-h4 {
+  color: white;
+  text-align: center;
+}
+
+.gradient-custom-p {
+  color: white;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .main-timeline-2::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .timeline-2 {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .timeline-2::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left-2::after,
+  .right-2::after {
+    left: 18px;
+  }
+
+  .left-2::before {
+    right: auto;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right-2 {
+    left: 0%;
+  }
+}
